@@ -4,23 +4,19 @@ Usage:
 		sudo docker-compose up -d
 
 	2. Enter Container
-		sudo docker exec -it autoio-jenkins-docker /bin/bash
+		sudo docker exec -it jenkins-docker /bin/bash
 
 	3. Stop Container
-		sudo docker stop autoio-jenkins-docker
-
-Version: 1.0
-
-Login: admin:autoio-admin:autoio_jenkins_admin
+		sudo docker stop jenkins-docker
 
 
 Reference:
 
 Create Image:
 
-	cd autoio-jenkins-docker/
+	cd jenkins-docker/
 
-	sudo docker build -t autoio-jenkins-docker:v1.0 .
+	sudo docker build -t jenkins-docker:v1.0 .
 
 List Images:
 

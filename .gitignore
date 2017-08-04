@@ -1,2 +1,2 @@
-jenkins_home/
-jenkins_backup/
+*~
+*.o

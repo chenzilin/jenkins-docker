@@ -1,0 +1,11 @@
+1. modify Dockerfile and docker-compose.yml
+2. ip-map, test start/web-access jenkins container, test ssh yocto@172.10.11.210
+3. config admin user, install plugins manual(default and just gitlab plugin and Role-based Authorization Strategy plugin)
+4. new job and test gitlab to jenkins trigger
+	4.1 Configure System, pictures 1.png and 2.png
+	4.2 Configure Gitlab API Token, 3.png and 4.png
+5. backup old jenkins users and jobs folders
+6. stop old jenkins container
+7. clear new jenkins jenkins_home folder
+8. start new jenkins container,restore users and jobs folders
+9. restart new jenkins container

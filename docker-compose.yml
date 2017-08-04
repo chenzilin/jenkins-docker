@@ -1,14 +1,12 @@
 jenkins:
-  image: "autoio-jenkins-docker:v1.0"
-  container_name: "autoio-jenkins-docker"
+  image: "jenkins-docker:v1.0"
+  container_name: "jenkins-docker"
   ports:
-      - "172.10.11.211:1081:8080"
-      - "172.10.11.211:50001:50000"
+      - "172.10.11.211:1082:8080"
+      - "172.10.11.211:50002:50000"
   volumes:
       - /etc/localtime:/etc/localtime
       - ./jenkins_home/:/var/jenkins_home/
       - ./jenkins_backup/:/var/jenkins_backup/
       - /opt/yocto/.ssh/:/var/jenkins_home/.ssh/
-      - /opt/yocto/script/:/opt/yocto/script/
-      - /opt/yocto/bin/repo:/var/lib/jenkins/bin/repo
       - /opt/yocto-rel/yocto/:/opt/yocto-rel/yocto/
